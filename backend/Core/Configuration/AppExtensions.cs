@@ -10,9 +10,6 @@ public static class AppExtensions
             app.UseSwaggerUI();
         }
 
-        var apiGroup = app.MapGroup("/app");
-        app.UseEndpoints(apiGroup);
-
         return app;
     }
 }
